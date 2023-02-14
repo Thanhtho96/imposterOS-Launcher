@@ -1,0 +1,77 @@
+[versions]
+##### Config build version ######
+compileSdk = "33"
+minSdk = "21"
+targetSdk = "33"
+versionCode = "1"
+versionName = "1.0.0"
+##### Config build version ######
+
+gradlePlugin = "8.0.2"
+kotlin = "1.8.22"
+googleService = "4.3.15"
+firebaseCrashlyticsGradle = "2.9.4"
+ksp = "1.8.22-1.0.11"
+kotlinCompilerExtension = "1.4.8"
+composeBom = "2023.06.01"
+composeActivity = "1.7.2"
+composeLifecycle = "2.6.1"
+ktxCore = "1.10.1"
+lifeCycle = "2.6.1"
+dataStore = "1.0.0"
+koin = "3.4.2"
+retrofit = "2.9.0"
+okHttp = "4.11.0"
+room = "2.5.2"
+coil = "2.4.0"
+firebaseBom = "31.2.2"
+location = "21.0.1"
+accompanist = "0.30.0"
+navigation = "2.6.0"
+widget = "1.0.0-beta01"
+material = "1.9.0"
+ktSerialization = "1.5.1"
+worker = "2.8.1"
+constraintCompose = "1.0.1"
+
+[libraries]
+compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+compose-material-3 = { group = "androidx.compose.material3", name = "material3" }
+compose-material-2 = { group = "androidx.compose.material", name = "material" }
+compose-ui = { group = "androidx.compose.ui", name = "ui" }
+compose-ui-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+compose-ui-debug = { group = "androidx.compose.ui", name = "ui-tooling" }
+compose-activity = { group = "androidx.activity", name = "activity-compose", version.ref = "composeActivity" }
+compose-lifecycle = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "composeLifecycle" }
+ktx-core = { group = "androidx.core", name = "core-ktx", version.ref = "ktxCore" }
+life-cycle = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifeCycle" }
+data-store = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "dataStore" }
+koin = { group = "io.insert-koin", name = "koin-android", version.ref = "koin" }
+koin-compose = { group = "io.insert-koin", name = "koin-androidx-compose", version.ref = "koin" }
+constraint-compose = { group = "androidx.constraintlayout", name = "constraintlayout-compose", version.ref = "constraintCompose" }
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-gson-converter = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+ok-http = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okHttp" }
+room = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+coil = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
+firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBom" }
+firebase-crashlytics = { group = "com.google.firebase", name = "firebase-crashlytics-ktx" }
+firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics-ktx" }
+location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "location" }
+system-ui-controller = { group = "com.google.accompanist", name = "accompanist-systemuicontroller", version.ref = "accompanist" }
+permissions = { group = "com.google.accompanist", name = "accompanist-permissions", version.ref = "accompanist" }
+flowlayout = { group = "com.google.accompanist", name = "accompanist-flowlayout", version.ref = "accompanist" }
+navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigation" }
+widget = { group = "androidx.glance", name = "glance-appwidget", version.ref = "widget" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+kt-serialization = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "ktSerialization" }
+worker = { group = "androidx.work", name = "work-runtime-ktx", version.ref = "worker" }
+android = { group = "com.android.tools.build", name = "gradle", version.ref = "gradlePlugin" }
+kotlin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+google-service = { group = "com.google.gms", name = "google-services", version.ref = "googleService" }
+firebase-crashlytics-gradle = { group = "com.google.firebase", name = "firebase-crashlytics-gradle", version.ref = "firebaseCrashlyticsGradle" }
+
+[plugins]
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }

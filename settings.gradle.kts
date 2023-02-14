@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "ImposterOSLauncher"
-include ':app'
+rootProject.name = "imposterOSLauncher"
+include(":app")

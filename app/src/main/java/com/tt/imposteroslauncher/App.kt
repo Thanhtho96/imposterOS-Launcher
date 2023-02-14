@@ -17,7 +17,6 @@ class App : Application() {
         super.onCreate()
 
         mInstance = this
-        mAppLifeScope = CoroutineScope(SupervisorJob() + Dispatchers.Main.immediate)
 
         startKoin {
             androidContext(this@App)
@@ -29,8 +28,7 @@ class App : Application() {
         // At the top level of your kotlin file:
         val Context.dataStore by preferencesDataStore(name = "settings")
 
-        private var mAppLifeScope: CoroutineScope? = null
-        val appLifeScope get() = mAppLifeScope!!
+        val appLifeScope = CoroutineScope(SupervisorJob() + Dispatchers.Main.immediate)
 
         private var mInstance: App? = null
         val instance get() = mInstance!!
