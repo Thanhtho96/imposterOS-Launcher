@@ -1,10 +1,10 @@
 [versions]
 ##### Config build version ######
 compileSdk = "33"
-minSdk = "21"
+minSdk = "23"
 targetSdk = "33"
 versionCode = "1"
-versionName = "1.0.0"
+versionName = "0.0.1"
 ##### Config build version ######
 
 gradlePlugin = "8.0.2"
