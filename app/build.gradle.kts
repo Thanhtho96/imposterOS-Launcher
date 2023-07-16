@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace = "com.tt.imposteroslauncher"
+    namespace = "imposter.os.launcher"
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
-        applicationId = "com.tt.imposteroslauncher"
+        applicationId = "imposter.os.launcher"
         minSdk = libs.versions.minSdk.get().toInt()
         targetSdk = libs.versions.targetSdk.get().toInt()
         versionCode = libs.versions.versionCode.get().toInt()
@@ -89,9 +89,7 @@ dependencies {
     implementation(libs.data.store)
     implementation(libs.koin)
     implementation(libs.koin.compose)
-//    implementation(libs.retrofit)
-//    implementation(libs.retrofit.gson.converter)
-//    implementation(libs.ok.http)
+    implementation(libs.ktor.client)
     implementation(libs.room)
     annotationProcessor(libs.room.compiler)
     ksp(libs.room.compiler)
@@ -100,14 +98,12 @@ dependencies {
     implementation(firebaseBom)
     implementation(libs.firebase.crashlytics)
     implementation(libs.firebase.analytics)
-//    implementation(libs.location)
+    implementation(libs.location)
     implementation(libs.system.ui.controller)
     implementation(libs.permissions)
-    implementation(libs.flowlayout)
     implementation(libs.navigation)
     implementation(libs.widget)
     implementation(libs.material)
     implementation(libs.kt.serialization)
     implementation(libs.worker)
-    implementation(libs.constraint.compose)
 }

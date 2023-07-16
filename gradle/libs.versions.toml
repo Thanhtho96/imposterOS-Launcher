@@ -20,8 +20,7 @@ ktxCore = "1.10.1"
 lifeCycle = "2.6.1"
 dataStore = "1.0.0"
 koin = "3.4.2"
-retrofit = "2.9.0"
-okHttp = "4.11.0"
+ktor = "2.3.2"
 room = "2.5.2"
 coil = "2.4.0"
 firebaseBom = "31.2.2"
@@ -32,7 +31,6 @@ widget = "1.0.0-beta01"
 material = "1.9.0"
 ktSerialization = "1.5.1"
 worker = "2.8.1"
-constraintCompose = "1.0.1"
 
 [libraries]
 compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
@@ -48,10 +46,7 @@ life-cycle = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", ver
 data-store = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "dataStore" }
 koin = { group = "io.insert-koin", name = "koin-android", version.ref = "koin" }
 koin-compose = { group = "io.insert-koin", name = "koin-androidx-compose", version.ref = "koin" }
-constraint-compose = { group = "androidx.constraintlayout", name = "constraintlayout-compose", version.ref = "constraintCompose" }
-retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
-retrofit-gson-converter = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
-ok-http = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okHttp" }
+ktor-client = { group = "io.ktor", name = "ktor-client-core", version.ref = "ktor" }
 room = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
 room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
 coil = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
@@ -61,7 +56,6 @@ firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics
 location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "location" }
 system-ui-controller = { group = "com.google.accompanist", name = "accompanist-systemuicontroller", version.ref = "accompanist" }
 permissions = { group = "com.google.accompanist", name = "accompanist-permissions", version.ref = "accompanist" }
-flowlayout = { group = "com.google.accompanist", name = "accompanist-flowlayout", version.ref = "accompanist" }
 navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigation" }
 widget = { group = "androidx.glance", name = "glance-appwidget", version.ref = "widget" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
